@@ -1,5 +1,5 @@
 # modify
-modular digital image processor
+modular digital image processor.
 animate in Processing. Good fun. 
 
 <b>SETUP :</b>
