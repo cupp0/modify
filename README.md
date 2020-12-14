@@ -1,4 +1,7 @@
 # modify
+
+![](erf.gif)
+
 modular digital image processor.
 Animate in Processing. Good fun. 
 
