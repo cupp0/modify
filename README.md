@@ -25,7 +25,7 @@ You will need to install [Processing](https://processing.org/download/) and make
 
 The workflow is inspired by the programming language PureData.
 
-Add a noise module from the Generator column and a display module from the output column. Move the modules around the sketch by clicking and dragging the black grabber nodes at the top center. To Connect the output of the noise generator to in the input of the display, first click the output of the noise module (small white square, bottom left). You should see a line originating at the ouput you clicked following your cursor position. The next data input node you click on will form a connection. Click on the input node of the data module (small white square, top let) to see what noise looks like. 
+Add a noise module from the Generator column and a display module from the output column. Move the modules around the sketch by clicking and dragging the black grabber nodes at the top center. To Connect the output of the noise generator to in the input of the display, first click the output of the noise module (small white square, bottom left). You should see a line originating at the ouput you clicked following your cursor position. The next data input node you click on will form a connection. Click on the input node of the display module (small white square, top let) to see what noise looks like. 
 
 Move the generator sliders around, have some fun.
 
@@ -45,7 +45,7 @@ develop a visual style around modular animation. Much like a sound synthesizer, 
 
 <b>COMING FEATURES :</b>
 
-I should note here that this tool is very incomplete! And the stuff that is complete is certainly not permanent. Bugs, inefficiencies, unlabelled UI objects, etc. This will be a polished piece in time; just wanted to share what I have so far :)
+I should note here that this tool is very incomplete! And the stuff that is complete might not be permanent. Bugs, inefficiencies, unlabelled/halfworking UI objects, etc. This will be a polished piece in time; just wanted to share what I have so far :)
 
 color - right now, all output is grayscale. Display will soon have RGB inputs.
 
@@ -58,13 +58,15 @@ feedback - right now, if you create a closed loop in the patch, you will make th
 
 audio input - seems like it wants to have an audio module as a modifier. Not sure exactly how I would want to implement that though.
 
+loads of other useful modules - with a flexible template for creating modules, I'll be building a variety of tools. Right now I am in the "build everything that comes to mind phase". With practice, I'll gain intuition about which types of tools work well together and begin to chisel away at the modules until I have a compact, flexible bag of tricks for every pixel poppin scenario you can dream of.
+
 <b>DOCUMENTATION :</b>
 
 <i>~ generators ~</i>
 
 math - define an expression and the range over which to evaluate the expression using reverse polish notation (eg. x+y would be written xy+, and x^2+y^2 would be written x2^y2^+). The default, "xs", is sin(x). The two textfields that say 250 are the dimensions of the output. When you click the button to their right, they will update the dimensions of every module down the line, all the way to any connected display. Don't have two modules disagreeing on dimensions(I'll do an error message eventually). The boxes with -10 and 10 define the range over which to evaluate the expression, and the button sends the expression to the expression evaluator (although forming a connection will do this automatically). The expression evaluator maps the min and the max of the evaluation to 0 and 255.
 
-noise - Generate a Perlin Noise field. Polar or cartesian. Again, dimension boxes. The sliders define an increment on the x and y axis that are used to sample the noise. The box above the sliders is the noise seed. Use these text boxes to synchronize noise seeds if you'd like. By default a new seed is generated with every module that uses noise (right now, just noise and basicMod).
+noise - Generate an open simplex noise field. Polar or cartesian. Again, dimension boxes. The sliders define an increment on the x and y axis that are used to sample the noise in Cartesian mode. The box above the sliders is the noise seed. Use these text boxes to synchronize noise seeds if you'd like. By default a new seed is generated with every module that uses noise (right now, just noise and basicMod).
 
 image - Hit the button and use the file select screen to navigate to an image (just jpg works I think). All connected modules should resize accordingly, there might be some bugs with resizing. Will tackle them soon.
 
