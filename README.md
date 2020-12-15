@@ -45,6 +45,8 @@ develop a visual style around modular animation. Much like a sound synthesizer, 
 
 <b>COMING FEATURES :</b>
 
+I should note here that this tool is very incomplete! And the stuff that is complete is certainly not permanent. Bugs, inefficiencies, unlabelled UI objects, etc. This will be a polished piece in time; just wanted to share what I have so far :)
+
 color - right now, all output is grayscale. Display will soon have RGB inputs.
 
 record - There is a Movie Maker tool in Processing that allows for a quick conversion of what's displaying to a .mov file.
