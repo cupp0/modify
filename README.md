@@ -1,13 +1,25 @@
 # modify
-
-![](erf.gif)
-
-modular digital image processor.
+<br/>
+a modular digital image processor.
 Animate in Processing. Good fun. 
+<br/><br/><br/><br/>
+
+![](patch.png)
+<br/>
+*pixels, baby*
+<br/>
+<br/>
+
 
 <b>SETUP :</b>
 
 You will need to install [Processing](https://processing.org/download/) and make sure the CP5 library is properly installed. This is easy. In the Processing IDE, find Sketch > Import Library > Add Library. Find ControlP5 and click buttons. After this, the PDE file should run without a hitch. You will note that there is some Java included, which will run in Processing. thanks to Kurt Spencer for his implementation of open simplex noise.
+
+![](erf.gif)
+<br/>
+*a pleasant, pulsing planet with strident, scrappy stars*
+<br/>
+<br/>
 
 <b>GETTING STARTED :</b>
 
@@ -20,6 +32,12 @@ Move the generator sliders around, have some fun.
 Once you catch your breath, delete the connection by hovering the line between the modules (it should appear bold when hovered) and pressing the 'd' key. The connection is destroyed (to erase entire modules from existence, hover the grabber node and hit 'd', you monster). Go back to the menu, add a gate module from the functions column. Connect the noise generator output to the gate input, then connect the gate output to the display input. Move the sliders on the gate module around. Observe what they do. Feel the difference they make. Three modules become one. You are in control.
 
 Add a basicMod from the modifier column. What is it doing? Why is that red dot there? Figure it out. Connect the gray output on the basicMod to the gray input on the noise generator. Hell, you could even connect it to both gray inputs. If you're a lunatic you could grab four basicMods and attach one to each of the two modifier inputs on the noise module and the gate module. Once you are pleased with your routing, discover the variety of basicMod by clicking buttons and moving sliders. This is the only way to learn.
+
+![](12-14-20.gif)
+<br/>
+*feedback & boundaries & squares, oh my!*
+<br/>
+<br/>
 
 <b>GOAL :</b>
 
