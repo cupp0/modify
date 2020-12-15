@@ -2,7 +2,7 @@
 <br/>
 a modular digital image processor.
 Animate in Processing. Good fun. 
-<br/><br/><br/><br/>
+<br/><br/>
 
 ![](patch.png)
 <br/>
