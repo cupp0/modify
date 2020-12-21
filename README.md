@@ -4,7 +4,7 @@ a modular image processor.
 Animate in Processing. Good fun. 
 <br/><br/>
 
-![](modifyOverview.png)
+![](demos/modifyOverview.png)
 <br/>
 *pixels, baby*
 <br/>
@@ -13,7 +13,7 @@ Animate in Processing. Good fun.
 Modify is an image synthesizer. Its reciple is equal parts flexibility, discovery, and raw power. It will reward your curiousity and question your intentions. If you'd like instructions on how to play with it, continue reading :] 
 
 
-![](birdBook.gif)
+![](demos/birdBook.gif)
 <br/>
 *what has two wings and keeps worms up at night?*
 <br/>
@@ -24,7 +24,7 @@ Modify is an image synthesizer. Its reciple is equal parts flexibility, discover
 You will need to install [Processing](https://processing.org/download/) and make sure the ControlP5 library is properly installed. In the Processing IDE, find Sketch > Import Library > Add Library. Find ControlP5 and click the buttons. After this, Modify.pde should run without a hitch. Many thanks to Andreas Schlegel for his fabulous ControlP5 library, Kurt Spencer for his implementation of open simplex noise, and of course, all of the wonderful people who make and maintain Processing.
 
 
-![](12-15-20.gif)
+![](demos/12-15-20.gif)
 <br/>
 *slurp that pixel soup*
 <br/>
@@ -39,7 +39,7 @@ See the menu in the top left. Add a noise module from under <b>generate</b> and 
 Move the generator sliders around, have some fun.
 
 
-![](bloom.gif)
+![](demos/bloom.gif)
 <br/>
 *bloom*
 <br/>
@@ -48,7 +48,7 @@ Move the generator sliders around, have some fun.
 Once you catch your breath, delete the connection by hovering the line between the modules (it should appear bold when hovered) and pressing the 'd' key. The connection is destroyed (to erase entire modules from existence, hover the grabber node and hit 'd', you monster). Go back to the menu, add a gate module from the <b>affect</b> column. Connect the noise generator output to the gate input, then connect the gate output to the display input. Move the sliders on the gate module around. Observe what they do. Feel the difference they make. Three modules become one. You are in control.
 
 
-![](relax.gif)
+![](demos/relax.gif)
 <br/>
 *I love this one. Makes me feel good*
 <br/>
@@ -57,7 +57,7 @@ Once you catch your breath, delete the connection by hovering the line between t
 Add a basicMod from the <b>modulate</b> section. What is it doing? Why is that red dot zipping around down there? Figure it out. Connect the modulation output on the basicMod (gray node, left side, under the red zero) to the modulation input on the noise generator (there are two of them on the right side). Hell, you could even connect it to both gray inputs. If you're a lunatic you could grab four basicMods and attach one to each of the two modifier inputs on the noise module and the gate module. Once you are pleased with your routing, discover the variety of basicMod by clicking buttons and moving sliders. This is the only way to learn.
 
 
-![](carl.gif)
+![](demos/carl.gif)
 <br/>
 *this is a serious application for serious people*
 <br/>
@@ -66,7 +66,7 @@ Add a basicMod from the <b>modulate</b> section. What is it doing? Why is that r
 The general shape of a patch is as follows : Generate -> Affect/Combine -> Display. No module will yield any output if there isn't a generator of some variety upstream. Suggestion: start with a couple of noise generators, a constant generator, and a display. Try out each of the <b>combine</b> and <b>affect</b> modules. Chain several together. Have the end of a chain <b>combine</b> with an output from earlier in that same chain. Once you find an image you like, grab a <b>modulate</b> module and hook it up to different sliders in the patch. Adjust its amplitude and duration until you like what it's doing. To record, click the red square at the top right of the display module. Click again to stop recording. This will create a bunch of .tif files in the sketch folder. You can use Processing's Movie Maker tool to sequence these images.
 
 
-![](morphDemo.gif)
+![](demos/morphDemo.gif)
 <br/>
 *morph between surfaces using math generators, blend modules, and a 3D module. Example patches coming soon.*
 <br/>
@@ -81,7 +81,7 @@ The general shape of a patch is as follows : Generate -> Affect/Combine -> Displ
 - you mustn't be upset if something doesn't work quite right / doesn't work at all (There are a handful of known bugs, but nothing distastrous)
 
 
-![](erf.gif)
+![](demos/erf.gif)
 <br/>
 *a pleasant, pulsing planet with strident, scrappy stars*
 <br/>
@@ -101,9 +101,9 @@ audio input - seems like it wants to have an audio module as a modifier. Not sur
 
 Text/Draw - right now, the draw canvas is useful, but crude. I'd love to incorporate a solid vector based drawing window at some point in the future, with text, node editing tools, etc.
 
-![](newParachute.gif)
+![](demos/newParachute.gif)
 <br/>
-*spend some time putting trig into the 3D module*
+*spend some quality time with the 3D module*
 <br/>
 <br/>
 
