@@ -10,7 +10,7 @@ Animate in Processing. Good fun.
 <br/>
 <br/>
 
-Modify is an image synthesizer. Its reciple is equal parts flexibility, discovery, and raw power. It will reward your curiousity and question your intentions. If you'd like instructions on how to play with it, continue reading :] 
+modify is an image synthesizer. Its reciple is equal parts flexibility, discovery, and raw power. It will reward your curiousity and question your intentions. If you'd like instructions on how to play with it, continue reading :] 
 
 
 ![](demos/birdBook.gif)
