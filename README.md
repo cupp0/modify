@@ -103,7 +103,7 @@ Text/Draw - right now, the draw canvas is useful, but crude. I'd love to incorpo
 
 ![](newParachute.gif)
 <br/>
-*honestly just spend some time putting trig into the 3D module. Try "xsy-xc*" from a math generator into input 1 of a 3D module. Have a constant generator feed the other two inputs*
+*spend some time putting trig into the 3D module*
 <br/>
 <br/>
 
