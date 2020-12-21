@@ -78,7 +78,8 @@ The general shape of a patch is as follows : Generate -> Affect/Combine -> Displ
 - you mustn't connect an output to its own input. Use the feedback module, smartypants.
 - modules will not operate unless all data inputs and outputs have an active connection
 - you must use reverse polish notation with the math module and the combine module. Examples given at the top of Expression.PDE
-- you mustn't be upset if something doesn't work quite right / doesn't work at all (There are a handful of known bugs, but nothing distastrous).
+- you mustn't be upset if something doesn't work quite right / doesn't work at all (There are a handful of known bugs, most are harmless,
+some will cause a crash)
 
 
 ![](demos/erf.gif)
