@@ -102,7 +102,7 @@ audio input - seems like it wants to have an audio module as a modifier. Not sur
 
 Text/Draw - right now, the draw canvas is useful, but crude. I'd love to incorporate a solid vector based drawing window at some point in the future, with text, node editing tools, etc.
 
-size - right now, the modules will only operate on array length 62500, name 250x250. There will soon be resizing controls that will allow the use to both synthesize at different resolutions and work with input images at source resolution.
+size - right now, the modules will only operate on array length 62500, namely 250x250. There will soon be resizing controls that will allow the user to both synthesize at different resolutions and work with input images at source resolution.
 
 ![](demos/newParachute.gif)
 <br/>
