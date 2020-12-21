@@ -1,19 +1,81 @@
 # modify
 <br/>
-a modular digital image processor.
+a modular image processor.
 Animate in Processing. Good fun. 
 <br/><br/>
 
-![](patch.png)
+![](modifyOverview.png)
 <br/>
 *pixels, baby*
 <br/>
 <br/>
 
 
-<b>SETUP :</b>
+<b>MODIFY :</b>
 
-You will need to install [Processing](https://processing.org/download/) and make sure the CP5 library is properly installed. This is easy. In the Processing IDE, find Sketch > Import Library > Add Library. Find ControlP5 and click buttons. After this, the PDE file should run without a hitch. You will note that there is some Java included, which will run in Processing. thanks to Kurt Spencer for his implementation of open simplex noise.
+Modify is an image synthesizer. Its reciple is equal parts flexibility, discovery, and raw power. It will reward your curiousity and question your intentions. If you'd like instructions on how to play with it, do continue reading :] 
+
+![](birdBook.gif)
+<br/>
+*what has two wings and keeps worms up at night?*
+<br/>
+<br/>
+
+<b>SETUP</b>
+
+You will need to install [Processing](https://processing.org/download/) and make sure the ControlP5 library is properly installed. In the Processing IDE, find Sketch > Import Library > Add Library. Find ControlP5 and click buttons. After this, the PDE file should run without a hitch. Many thanks to Andreas Schlegel for his fabulous ControlP5 library, Kurt Spencer for his implementation of open simplex noise, and of course, all of the wonderful people who make and maintain Processing.
+
+![](12-15-20.gif)
+<br/>
+*slurp that pixel soup*
+<br/>
+<br/>
+
+<b>GETTING STARTED</b>
+
+The workflow is inspired by the programming language PureData. At the time of writing, there aren't really any labels in the UI, so if you are confused about how to use anything, let me know and I will help!
+
+See the menu in the top left. Add a noise module from under <b>generate</b> and a display module from <b>output</b>. Move the modules around the sketch by clicking and dragging the black grabber nodes at the top center. To Connect the output of the noise generator to the input of the display, first click the output of the noise module (small white square, bottom left). You should see a line originating at the ouput you clicked following your cursor position. The next input node you click on will form a connection. Click on the input node of the display module (small white square, top let) to see what noise looks like. 
+
+Move the generator sliders around, have some fun.
+
+![](bloom.gif)
+<br/>
+*bloom*
+<br/>
+<br/>
+
+Once you catch your breath, delete the connection by hovering the line between the modules (it should appear bold when hovered) and pressing the 'd' key. The connection is destroyed (to erase entire modules from existence, hover the grabber node and hit 'd', you monster). Go back to the menu, add a gate module from the <b>affect</b> column. Connect the noise generator output to the gate input, then connect the gate output to the display input. Move the sliders on the gate module around. Observe what they do. Feel the difference they make. Three modules become one. You are in control.
+
+![](relax.gif)
+<br/>
+*I love this one. Makes me feel good*
+<br/>
+<br/>
+
+Add a basicMod from the <b>modulate</b> section. What is it doing? Why is that red dot zipping around down there? Figure it out. Connect the modulation output on the basicMod (gray node, left side, under the red zero) to the modulation input on the noise generator (there are two of them on the right side). Hell, you could even connect it to both gray inputs. If you're a lunatic you could grab four basicMods and attach one to each of the two modifier inputs on the noise module and the gate module. Once you are pleased with your routing, discover the variety of basicMod by clicking buttons and moving sliders. This is the only way to learn.
+
+![](carl.gif)
+<br/>
+*this is a serious application for serious people*
+<br/>
+<br/>
+
+The general shape of a patch is as follows : Generate -> Affect/Combine -> Display. No module will yield any output if there isn't a generator of some variety upstream. Suggestion: start with a couple of noise generators, a constant generator, and a display. Try out each of the <b>combine</b> and <b>affect</b> modules. Chain several together. Have the end of a chain <b>combine</b> with an output from earlier in that same chain. Once you find an image you like, grab a <b>modulate</b> module and hook it up to different sliders in the patch. Adjust its amplitude and duration until you like what it's doing. To record, click the red square at the top right of the display module. Click again to stop recording. This will create a bunch of .tif files in the sketch folder. You can use Processing's Movie Maker tool to sequence these images.
+
+![](morphDemo.gif)
+<br/>
+*morph between surfaces using math generators, blend modules, and a 3D module. Example patches coming soon.*
+<br/>
+<br/>
+
+<b>RULES</b>
+- you must click an output before an input to form a connection
+- you mustn't connect modulation nodes to data nodes or vice versa, but all like nodes are compatible
+- you mustn't connect an output to its own input. Use the feedback module, smartypants.
+- modules will not operate unless all data inputs and outputs have an active connection
+- you must use reverse polish notation with the math module and the combine module. Examples given at the top of Expression.PDE
+- you mustn't be upset if something doesn't work quite right / doesn't work at all (There are a handful of known bugs, but nothing distastrous)
 
 ![](erf.gif)
 <br/>
@@ -21,46 +83,29 @@ You will need to install [Processing](https://processing.org/download/) and make
 <br/>
 <br/>
 
-<b>GETTING STARTED :</b>
-
-The workflow is inspired by the programming language PureData.
-
-Add a noise module from the Generator column and a display module from the output column. Move the modules around the sketch by clicking and dragging the black grabber nodes at the top center. To Connect the output of the noise generator to in the input of the display, first click the output of the noise module (small white square, bottom left). You should see a line originating at the ouput you clicked following your cursor position. The next data input node you click on will form a connection. Click on the input node of the display module (small white square, top let) to see what noise looks like. 
-
-Move the generator sliders around, have some fun.
-
-Once you catch your breath, delete the connection by hovering the line between the modules (it should appear bold when hovered) and pressing the 'd' key. The connection is destroyed (to erase entire modules from existence, hover the grabber node and hit 'd', you monster). Go back to the menu, add a gate module from the functions column. Connect the noise generator output to the gate input, then connect the gate output to the display input. Move the sliders on the gate module around. Observe what they do. Feel the difference they make. Three modules become one. You are in control.
-
-Add a basicMod from the modifier column. What is it doing? Why is that red dot there? Figure it out. Connect the gray output on the basicMod to the gray input on the noise generator. Hell, you could even connect it to both gray inputs. If you're a lunatic you could grab four basicMods and attach one to each of the two modifier inputs on the noise module and the gate module. Once you are pleased with your routing, discover the variety of basicMod by clicking buttons and moving sliders. This is the only way to learn.
-
-![](12-14-20.gif)
-<br/>
-*feedback & boundaries & squares, oh my!*
-<br/>
-<br/>
-
-<b>GOAL :</b>
-
-develop a visual style around modular animation. Much like a sound synthesizer, you can quickly and easily learn to use this tool to create a wonderfully chaotic experience. However, with time and thoughtful practice, you could also learn to create more familiar, intentional items. Just gotta build a tool kit that is flexible.
-
 <b>COMING FEATURES :</b>
 
-I should note here that this tool is very incomplete! And the stuff that is complete might not be permanent. Bugs, inefficiencies, unlabelled/halfworking UI objects, etc. This will be a polished piece in time; just wanted to share what I have so far :)
+This tool is around 65% done. There are a few things that can make it more dynamic that I'm working on:
 
-color - right now, all output is grayscale. Display will soon have RGB inputs.
+algorithm - a fairly general relational algorithm module. User defines relational conditions between neighboring pixels, as well as the action to perform given that those conditions are satisfied.
 
-record - There is a Movie Maker tool in Processing that allows for a quick conversion of what's displaying to a .mov file.
+Blob - outputs a mask that locates shapes in its input. 
 
-algorithm - this one is exciting. It is a powerful module that will allow the user to define a pixel-based algorithm. The user will decide
-which pixels get acted on with a mask input, conditions that must be met by said pixels, and actions performed given that those conditions are satisfied. For example, for (every pixel on the left side of the screen), if (the pixel has a neighbor above/below with identical value), then (swap positions with a neighbor to the left/right). Building this will be a journey to find the balance between flexibility and usefulness
-
-feedback - right now, if you create a closed loop in the patch, you will make the thing sad. That is temporary. Soon, we will be able to do feedback which will be a game changer.
+feedback - feedback module works ok right now, but you can't nest feedback modules, which is an important feature. May have to rethink how it's done.
 
 audio input - seems like it wants to have an audio module as a modifier. Not sure exactly how I would want to implement that though.
 
-loads of other useful modules - with a flexible template for creating modules, I'll be building a variety of tools. Right now I am in the "build everything that comes to mind phase". With practice, I'll gain intuition about which types of tools work well together and begin to chisel away at the modules until I have a compact, flexible bag of tricks for every pixel poppin scenario you can dream of.
+Text/Draw - right now, the draw canvas is useful, but crude. I'd love to incorporate a solid vector based drawing window at some point in the future, with text, node editing tools, etc.
+
+![](parachute.gif)
+<br/>
+*honestly just spend some time putting trig into the 3D module. Try "xsy-xc*" from a math generator into input 1 of a 3D module. Have a constant generator feed the other two inputs*
+<br/>
+<br/>
 
 <b>DOCUMENTATION :</b>
+
+This section is not up to date, but definitely has some useful info. If you have a question about a specific module, check here. If you can't find the answer, contact me :)
 
 <i>~ generators ~</i>
 
