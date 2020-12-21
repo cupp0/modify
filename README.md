@@ -101,7 +101,7 @@ audio input - seems like it wants to have an audio module as a modifier. Not sur
 
 Text/Draw - right now, the draw canvas is useful, but crude. I'd love to incorporate a solid vector based drawing window at some point in the future, with text, node editing tools, etc.
 
-![](parachute.gif)
+![](newParachute.gif)
 <br/>
 *honestly just spend some time putting trig into the 3D module. Try "xsy-xc*" from a math generator into input 1 of a 3D module. Have a constant generator feed the other two inputs*
 <br/>
