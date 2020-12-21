@@ -34,7 +34,7 @@ You will need to install [Processing](https://processing.org/download/) and make
 
 The workflow is inspired by the programming language PureData. At the time of writing, the UI isn't thoroughly labelled. Start with these instructions. If there is anything you're unsure of/confused about, let me know!
 
-See the menu in the top left. Add a noise module from under <b>generate</b> and a display module from <b>output</b>. Move the modules around the sketch by clicking and dragging the black grabber nodes at the top center. To Connect the output of the noise generator to the input of the display, first click the output of the noise module (small white square, bottom left). You should see a line originating at the ouput you clicked following your cursor position. The next input node you click on will form a connection. Click on the input node of the display module (small white square, top let) to see what noise looks like. 
+See the menu in the top left. Add a noise module from under <b>generate</b> and a display module from <b>output</b>. Move the modules around the sketch by clicking and dragging the black grabber nodes at the top center. To Connect the output of the noise generator to the input of the display, first click the output of the noise module (small white square, bottom left). You should see a line originating at the ouput you clicked following your cursor position. The next input node you click on will form a connection. Click on the input node of the display module (small white square, top left) to see what noise looks like. 
 
 Move the generator sliders around, have some fun.
 
