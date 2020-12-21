@@ -21,7 +21,7 @@ Modify is an image synthesizer. Its reciple is equal parts flexibility, discover
 
 <b>SETUP</b>
 
-You will need to install [Processing](https://processing.org/download/) and make sure the ControlP5 library is properly installed. In the Processing IDE, find Sketch > Import Library > Add Library. Find ControlP5 and click buttons. After this, the PDE file should run without a hitch. Many thanks to Andreas Schlegel for his fabulous ControlP5 library, Kurt Spencer for his implementation of open simplex noise, and of course, all of the wonderful people who make and maintain Processing.
+You will need to install [Processing](https://processing.org/download/) and make sure the ControlP5 library is properly installed. In the Processing IDE, find Sketch > Import Library > Add Library. Find ControlP5 and click the buttons. After this, Modify.pde should run without a hitch. Many thanks to Andreas Schlegel for his fabulous ControlP5 library, Kurt Spencer for his implementation of open simplex noise, and of course, all of the wonderful people who make and maintain Processing.
 
 
 ![](12-15-20.gif)
