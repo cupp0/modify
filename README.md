@@ -1,5 +1,6 @@
 # modify
 <br/>
+head to the Pixelixir repo for an updated version of this. I just started a new repository cause it's just a different project now. There will be a readme approximately soon.
 a modular image processor.
 Animate in Processing. Good fun. 
 <br/><br/>
